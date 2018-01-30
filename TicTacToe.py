@@ -5,7 +5,12 @@ l_r = [[' ', ' ', ' '], [' ', ' ', ' '], [' ', ' ', ' ']]
 
 def tic_tac_toe(player_):
 
-    x = int(raw_input('Player ' + player_ + ' turn...'))
+    while True:
+        try:
+            x = int(raw_input('Player ' + player_ + ' turn...'))
+            break
+        except ValueError:
+            print('Please make a valid move...')
 
     set_position(x, player_)
 
