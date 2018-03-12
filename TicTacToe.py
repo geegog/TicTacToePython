@@ -1,5 +1,7 @@
 from __future__ import print_function
 
+import os
+
 l_r = [[' ', ' ', ' '], [' ', ' ', ' '], [' ', ' ', ' ']]
 
 
@@ -13,6 +15,7 @@ def tic_tac_toe(player_):
             print('Please make a valid move...')
 
     set_position(x, player_)
+    os.system('clear')
 
     print ('__ ' + l_r[0][0] + ' __ | __ ' + l_r[0][1] + ' __ | __ ' + l_r[0][2] + ' __')
     print ('__ ' + l_r[1][0] + ' __ | __ ' + l_r[1][1] + ' __ | __ ' + l_r[1][2] + ' __')
